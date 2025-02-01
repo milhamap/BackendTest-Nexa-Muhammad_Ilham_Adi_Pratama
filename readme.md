@@ -4,13 +4,15 @@
 
 ## Forking dari Repository Utama
 
-1. Buka Halaman [Repo](https://gitlab.com/milhamap/web-apps-kmipnv)
+1. Buka Halaman [Repo](https://github.com/milhamap/nexa-test)
 
 2. Tekan Icon Fork
 
+3. Tekan Tombol 'Create Fork'
+
 ## Mengcloning Repository Hasil Forking
 
-1. Buka Halaman Gitlab Anda
+1. Buka Halaman Github Anda
 
 2. Pilih Repository Hasil Forking
 
@@ -19,13 +21,13 @@
 4. Ketikan Perintah Berikut
 
 ```
-git clone https://gitlab.com/milhamap/web-apps-kmipnv.git
+git clone https://github.com/milhamap/nexa-test.git
 ```
 
 4. Masuk Ke Dalam Folder Hasil Clone
 
 ```
-cd web-apps-kmipnv
+cd nexa-test
 ```
 
 ## Hubungkan dengan repository utama
@@ -33,7 +35,7 @@ cd web-apps-kmipnv
 1. Ketikan perintah berikut pada folder repo hasil forking anda
 
 ```
-git remote add upstream https://gitlab.com/milhamap/web-apps-kmipnv.git
+git remote add upstream https://github.com/milhamap/nexa-test.git
 ```
 
 2. Ketikan perintah berikut untuk mengupdate data terbaru
@@ -48,14 +50,14 @@ git fetch upstream
 git pull upstream main
 ```
 
-# Tutorial Penggunaan & Konfigurasi Laravel
+# Tutorial Penggunaan Tanpa Docker
 
-1. Install Composer Terlebih Dahulu <br>
-   [Download disini](https://getcomposer.org/download/)
+1. Install Node Terlebih Dahulu (Saya menggunakan versi 18.20.5) <br>
+   [Download disini](https://nodejs.org/id/download)
 2. Install Packagenya Terlebih Dahulu
 
 ```
-composer install
+npm install
 ```
 
 3. Copy isi file .env.example
