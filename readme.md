@@ -4,7 +4,7 @@
 
 ## Forking dari Repository Utama
 
-1. Buka Halaman [Repo](https://github.com/milhamap/nexa-test)
+1. Buka Halaman [Repo](https://github.com/milhamap/BackendTest-Nexa-Muhammad_Ilham_Adi_Pratama)
 
 2. Tekan Icon Fork
 
@@ -21,7 +21,7 @@
 4. Ketikan Perintah Berikut
 
 ```
-git clone https://github.com/milhamap/nexa-test.git
+git clone https://github.com/milhamap/BackendTest-Nexa-Muhammad_Ilham_Adi_Pratama.git
 ```
 
 4. Masuk Ke Dalam Folder Hasil Clone
@@ -35,7 +35,7 @@ cd nexa-test
 1. Ketikan perintah berikut pada folder repo hasil forking anda
 
 ```
-git remote add upstream https://github.com/milhamap/nexa-test.git
+git remote add upstream https://github.com/milhamap/BackendTest-Nexa-Muhammad_Ilham_Adi_Pratama.git
 ```
 
 2. Ketikan perintah berikut untuk mengupdate data terbaru
