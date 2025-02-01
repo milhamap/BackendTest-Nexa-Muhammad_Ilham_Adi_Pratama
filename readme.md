@@ -66,15 +66,32 @@ npm install
 cp .env.example .env
 ```
 
-5. Buatlah database kosong di phpmyadmin dengan nama **homestead1**
-6. Lakukan Migrasi Database
+4. Jalankan aplikasi
 
 ```
-php artisan migrate:refresh --seed
+npm run start
 ```
 
-7. Jalankan aplikasi
+# Tutorial Penggunaan Dengan Docker
+1. Install Docker Terlebih Dahulu <br>
+   [Download disini](https://www.docker.com/products/docker-desktop/)
+2. Copy isi file .env.example
 
 ```
-php artisan serve
+cp .env.example .env
 ```
+
+3. Build Image dari Dockerfile
+
+```
+docker build -t node-nexa-test .
+```
+
+4. Jalankan aplikasi
+
+```
+docker run -p 1000:1000 node-nexa-test
+```
+
+# Dokumentasi Postman
+Anda dapat melihat dokumentasi postman untuk proyek ini [disini](https://documenter.getpostman.com/view/21604420/2sAYX3qiX5)

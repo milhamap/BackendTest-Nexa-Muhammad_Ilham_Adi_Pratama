@@ -3,9 +3,7 @@ const utils = require('../helpers/utils');
 // const bcrypt = require('bcrypt');
 const Validator = require('fastest-validator')
 const {ResponseFormatter, ResponseFormatterPagination} = require('../helpers/response');
-const fs = require("node:fs");
 const sharp = require("sharp");
-const {parse} = require("dotenv");
 require('dotenv').config()
 
 const v = new Validator();
@@ -152,22 +150,5 @@ module.exports = {
             await trx.rollback();
             return ResponseFormatter(res, 500, error.message, 'error');
         }
-    },
-    imageValidate: async (req, res) => {
-        const compressedImageBuffer = await sharp(req.files.photo[0].buffer)
-            .resize(400) // Ubah ukuran sesuai kebutuhan
-            .toBuffer();
-        const salt = await bcrypt.genSalt();
-        const hashedPassword = await bcrypt.hash("databaru", salt);
-        console.log(hashedPassword)
-        const imageBuffer = Buffer.from(compressedImageBuffer.toString('base64'), 'base64');
-        fs.writeFile('output-image.jpg', imageBuffer, { encoding: 'base64' }, (err) => {
-            if (err) {
-                console.error('Error saving image:', err);
-            } else {
-                console.log('Image saved successfully!');
-            }
-        });
-        return ResponseFormatter(res, 200, "success", compressedImageBuffer.toString('base64'),);
     }
 }
